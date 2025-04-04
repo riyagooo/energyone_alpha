@@ -6,6 +6,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/',  // Set to '/' for root domain or '/energyone/' for subfolder
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -17,13 +18,6 @@ export default defineConfig({
       '@apps': path.resolve(__dirname, './src/apps'),
       '@neon': path.resolve(__dirname, './src/apps/neon/src'),
       '@mosaic': path.resolve(__dirname, './src/apps/mosaic/src')
-    }
-  },
-  server: {
-    port: 3000,
-    open: true,
-    hmr: {
-      overlay: false
     }
   },
   build: {
