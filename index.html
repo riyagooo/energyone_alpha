@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnergyOne - Energy Management Platform</title>
+    <style>
+      /* Override potential vite error overlay */
+      [data-id="vite-error-overlay"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        z-index: -999 !important;
+        pointer-events: none !important;
+      }
+      
+      /* Ensure form elements are clickable */
+      input, button, a, select, textarea, form {
+        pointer-events: auto !important;
+        position: relative;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body class="font-inter antialiased bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Debug script to remove any Vite overlays that might block interaction
+      window.addEventListener('load', function() {
+        // Function to remove any potential overlays
+        function removeOverlays() {
+          const overlays = document.querySelectorAll('[data-id="vite-error-overlay"]');
+          if (overlays.length > 0) {
+            console.log('Found and removing Vite error overlays:', overlays.length);
+            overlays.forEach(overlay => {
+              overlay.style.display = 'none';
+              overlay.style.visibility = 'hidden';
+              overlay.style.opacity = '0';
+              overlay.style.zIndex = '-999';
+              overlay.style.pointerEvents = 'none';
+              console.log('Disabled overlay:', overlay);
+            });
+          }
+        }
+        
+        // Run immediately and set interval
+        removeOverlays();
+        setInterval(removeOverlays, 1000);
+        
+        // Add escape key handler to dismiss overlays
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            console.log('Escape key pressed, removing overlays');
+            removeOverlays();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
