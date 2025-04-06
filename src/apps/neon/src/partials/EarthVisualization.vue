@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-900 to-slate-900">
+  <section class="py-8 sm:py-12 bg-gradient-to-b from-gray-900 to-slate-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="relative">
         <!-- Background shape with neon glow -->
@@ -8,26 +8,28 @@
         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
           <div class="w-[300px] sm:w-[500px] h-[200px] sm:h-[300px] bg-blue-600/20 blur-[100px] -z-10"></div>
         </div>
-                    <!-- Hero content moved above Earth -->
-          <div class="max-w-3xl mx-auto text-center mt-12 md:mt-16">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8" data-aos="fade-up">
+
+        <div class="py-6 px-4 sm:px-6 rounded-xl">
+          <!-- Hero content at top -->
+          <div class="max-w-3xl mx-auto text-center mb-8">
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-4" data-aos="fade-up">
               EnergyOne: Power Your Investment Portfolio
             </h1>
-            <div class="max-w-2xl mx-auto mb-8 md:mb-10" data-aos="fade-up" data-aos-delay="100">
-              <p class="text-lg md:text-xl text-slate-300">Join thousands of investors funding the renewable energy revolution with our transparent, data-driven platform.</p>
+            <div class="max-w-2xl mx-auto mb-6" data-aos="fade-up" data-aos-delay="100">
+              <p class="text-lg text-slate-300">Join thousands of investors funding the renewable energy revolution with our transparent, data-driven platform.</p>
             </div>
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12" data-aos="fade-up" data-aos-delay="200">
-              <router-link to="/signup" class="btn text-white bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-500 hover:to-blue-300 shadow-lg shadow-blue-500/20 rounded-full px-8 py-3 font-semibold w-full sm:w-auto">
+            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="200">
+              <router-link to="/signup" class="btn text-white bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-500 hover:to-blue-300 shadow-lg shadow-blue-500/20 rounded-full px-6 py-2 sm:px-8 sm:py-3 font-semibold w-full sm:w-auto">
                 Create Your Account
               </router-link>
-              <router-link to="/dashboard" class="btn text-slate-300 bg-slate-700/80 hover:bg-slate-600 border-slate-600 rounded-full px-8 py-3 font-semibold w-full sm:w-auto">
+              <router-link to="/dashboard" class="btn text-slate-300 bg-slate-700/80 hover:bg-slate-600 border-slate-600 rounded-full px-6 py-2 sm:px-8 sm:py-3 font-semibold w-full sm:w-auto">
                 View Demo Dashboard
               </router-link>
             </div>
           </div>
 
-          <!-- Earth Visualization -->
-          <div class="relative mx-auto earth-viz-container" data-aos="fade-up">
+          <!-- Earth Visualization with compact size -->
+          <div class="relative mx-auto earth-viz-container mb-6" data-aos="fade-up">
             <div class="flex justify-center">
               <div ref="earthContainer" class="earth-container">
                 <div v-if="loading" class="loading-indicator">
@@ -39,30 +41,29 @@
             </div>
           </div>
           
-          <div class="py-12 px-4 sm:px-6 md:px-12 rounded-xl">
-          <!-- Section header before Earth -->
-          <div class="max-w-3xl mx-auto text-center pb-8 sm:pb-12 md:pb-16">
-            <div class="inline-flex text-sm font-semibold py-1 px-4 m-2 text-blue-200 bg-blue-900/50 rounded-full mb-4">Global Impact</div>
-            <h3 class="h3 font-playfair-display text-white mb-4">Renewable Energy Around the World</h3>
-            <p class="text-lg sm:text-xl text-slate-400">Explore the global impact of renewable energy projects and discover investment opportunities across continents.</p>
+          <!-- Compact section header below Earth -->
+          <div class="max-w-3xl mx-auto text-center mb-5">
+            <div class="inline-flex text-sm font-semibold py-1 px-3 text-blue-200 bg-blue-900/50 rounded-full mb-2">Global Impact</div>
+            <h2 class="h2 font-playfair-display text-white mb-2">Renewable Energy Around the World</h2>
+            <p class="text-base sm:text-lg text-slate-400">Explore the global impact of renewable energy projects and discover investment opportunities across continents.</p>
           </div>
 
-          <!-- Stats below visualization -->
-          <div class="flex flex-wrap justify-center mt-8 md:mt-12 gap-4 md:gap-8 lg:gap-12">
-            <div class="text-center px-4">
-              <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">150+</div>
+          <!-- Stats in a grid for better mobile layout -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
+            <div class="text-center px-2 py-3 bg-slate-800/50 rounded-lg">
+              <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-1">150+</div>
               <div class="text-sm text-slate-400">Energy Projects</div>
             </div>
-            <div class="text-center px-4">
-              <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">42</div>
+            <div class="text-center px-2 py-3 bg-slate-800/50 rounded-lg">
+              <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-1">42</div>
               <div class="text-sm text-slate-400">Countries</div>
             </div>
-            <div class="text-center px-4">
-              <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">$1.2B</div>
+            <div class="text-center px-2 py-3 bg-slate-800/50 rounded-lg">
+              <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-1">$1.2B</div>
               <div class="text-sm text-slate-400">Investments</div>
             </div>
-            <div class="text-center px-4">
-              <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-1">4.5M</div>
+            <div class="text-center px-2 py-3 bg-slate-800/50 rounded-lg">
+              <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-1">4.5M</div>
               <div class="text-sm text-slate-400">Tons CO₂ Offset</div>
             </div>
           </div>
@@ -433,14 +434,14 @@ export default {
 
 <style scoped>
 .h2 {
-  @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+  @apply text-2xl sm:text-3xl font-bold;
 }
 
 .earth-viz-container {
   border-radius: 12px;
-  min-height: 280px; /* Reduced min-height */
-  height: calc(100vw * 0.4); /* Slightly reduced height ratio */
-  max-height: 500px; /* Reduced max height */
+  min-height: 250px; /* Even smaller min-height for mobile */
+  height: calc(100vw * 0.4); /* Responsive height ratio */
+  max-height: 450px; /* Lower max height */
   overflow: hidden;
   box-shadow: 
     0 0 20px 2px rgba(59, 130, 246, 0.1),
@@ -508,7 +509,7 @@ export default {
 
 .country-name {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(30, 41, 59, 0.8);
@@ -518,7 +519,8 @@ export default {
   border-radius: 6px;
   border: 1px solid rgba(59, 130, 246, 0.3);
   text-align: center;
-  min-width: 160px;
+  min-width: 150px;
+  max-width: 80%;
   backdrop-filter: blur(8px);
   box-shadow: 
     0 4px 6px rgba(0, 0, 0, 0.1),
@@ -526,6 +528,24 @@ export default {
   z-index: 10;
   text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
   animation: pulse 2s infinite;
+}
+
+/* Mobile optimizations */
+@media (max-width: 639px) {
+  .country-name {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+    min-width: 120px;
+  }
+  
+  .spinner {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .loading-text {
+    font-size: 0.75rem;
+  }
 }
 
 @keyframes spin {
