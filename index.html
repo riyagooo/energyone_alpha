@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#1e293b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>EnergyOne - Energy Management Platform</title>
+    <!-- Preload fonts -->
+    <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin />
     <style>
       /* Override potential vite error overlay */
       [data-id="vite-error-overlay"] {
@@ -21,6 +28,24 @@
         position: relative;
         z-index: 1000;
       }
+      
+      /* Fix iOS viewport height issue */
+      :root {
+        --vh: 1vh;
+      }
+      
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      
+      .min-h-screen {
+        min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
+      }
     </style>
   </head>
   <body class="font-inter antialiased bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400">
@@ -29,6 +54,16 @@
     <script>
       // Debug script to remove any Vite overlays that might block interaction
       window.addEventListener('load', function() {
+        // Function to set viewport height variable for mobile
+        function setVhVariable() {
+          let vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        
+        // Set on load and add resize listener
+        setVhVariable();
+        window.addEventListener('resize', setVhVariable);
+        
         // Function to remove any potential overlays
         function removeOverlays() {
           const overlays = document.querySelectorAll('[data-id="vite-error-overlay"]');

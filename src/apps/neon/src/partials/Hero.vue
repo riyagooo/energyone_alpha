@@ -1,40 +1,30 @@
 <template>
-  <section class="relative overflow-hidden">
-
-    <!-- Bg gradient -->
-    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800 to-gray-900 opacity-60 h-[10rem] pointer-events-none -z-10" aria-hidden="true"></div>
-
+  <section class="relative">
+    <!-- Background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-slate-800 pointer-events-none -z-10" aria-hidden="true"></div>
     <!-- Illustration -->
-    <div class="absolute left-1/2 -translate-x-1/2 pointer-events-none -z-10" aria-hidden="true">
-      <img src="../images/hero-illustration.svg" class="max-w-none" width="2143" height="737" alt="Hero Illustration">
+    <div class="absolute inset-0 max-w-6xl mx-auto px-4 sm:px-6 -z-10" aria-hidden="true">
+      <svg class="absolute inset-y-0 right-0 translate-x-1/2 h-screen text-slate-800" width="1027" height="736" fill="none" viewBox="0 0 1027 736">
+        <path d="M1027 0H741.037L579.230 184.475C454.873 286.936 255.857 281.646 137.520 173.111L0 49.398V736H1027V0Z" fill="currentColor" />
+      </svg>
     </div>
-
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="pt-32 pb-12 md:pt-40 md:pb-20">
-
+    
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="pt-20 pb-16 md:pt-40 md:pb-20">
         <!-- Hero content -->
-        <div class="max-w-xl mx-auto md:max-w-[640px] md:mx-0 text-center md:text-left">
-
-          <div data-aos="zoom-out">
-            <div class="relative text-sm text-gray-300 bg-gray-800 rounded-full inline-block px-4 py-1 mb-6 before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:via-gray-600 before:rounded-full">
-              <div class="text-gray-400">Launching Infinite Workspaces. <a class="font-medium text-blue-500 inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span class="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a></div>
-            </div>
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="mb-6" data-aos="fade-down">
+            <div class="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full">Sustainable Energy Investment</div>
           </div>
-          <h1 class="h1 font-uncut-sans mb-6" data-aos="zoom-out" data-aos-delay="100">Where the world builds <em class="font-italic">software</em></h1>
-          <p class="text-xl text-gray-400 mb-10" data-aos="zoom-out" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-          <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4" data-aos="zoom-out" data-aos-delay="300">
-            <div>
-              <a class="btn text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
-                Get Started For Free <span class="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
-              </a>
-            </div>
-            <div>
-              <a class="btn text-gray-300 bg-gradient-to-t from-gray-800 to-gray-700 hover:to-gray-800 w-full shadow-lg" href="#0">Explore Docs</a>
-            </div>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8" data-aos="fade-down">EnergyOne: Power Your Investment Portfolio</h1>
+          <div class="max-w-2xl mx-auto mb-8 md:mb-10" data-aos="fade-down" data-aos-delay="150">
+            <p class="text-lg md:text-xl text-slate-300">Join thousands of investors funding the renewable energy revolution with our transparent, data-driven platform.</p>
           </div>
-
+          <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12" data-aos="fade-up" data-aos-delay="300">
+            <router-link to="/signup" class="btn text-white bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-500 hover:to-blue-300 shadow-lg shadow-blue-500/20 rounded-full px-8 py-3 font-semibold w-full sm:w-auto">Create Your Account</router-link>
+            <router-link to="/dashboard" class="btn text-slate-300 bg-slate-700/80 hover:bg-slate-600 border-slate-600 rounded-full px-8 py-3 font-semibold w-full sm:w-auto">View Demo Dashboard</router-link>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -45,3 +35,9 @@ export default {
   name: 'Hero',
 }
 </script>
+
+<style scoped>
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg border border-transparent px-4 py-3 text-base font-medium transition duration-150 ease-in-out;
+}
+</style>

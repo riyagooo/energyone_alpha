@@ -1,34 +1,26 @@
 <template>
-  <section>
+  <section class="bg-slate-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-
-      <!-- CTA box -->
-      <div class="relative bg-gradient-to-tr from-blue-600 to-purple-500 rounded py-10 px-8 md:py-16 md:px-12 overflow-hidden" data-aos="zoom-out">
-
-        <!-- Bg illustration -->
-        <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 mt-8 -z-10" aria-hidden="true">
-          <img src="../images/cta-illustration.svg" class="max-w-none" width="582" height="662" alt="Illustration">
+      <div class="relative px-6 sm:px-8 py-12 md:py-20 bg-gradient-to-br from-indigo-900 to-slate-800 rounded-xl overflow-hidden">
+        <!-- Glow effect -->
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+          <div class="w-[300px] sm:w-[500px] h-[200px] sm:h-[300px] bg-blue-600/20 blur-[100px] -z-10"></div>
         </div>
-
-        <div class="flex flex-col lg:flex-row justify-between items-center">
-
-          <!-- CTA content -->
-          <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
-            <h3 class="text-4xl font-bold font-uncut-sans mb-2">Get started with Neon</h3>
-            <p class="text-blue-200">It only takes a few minutes to get started with Neon. Understand your users, start free, today.</p>
+        
+        <div class="relative max-w-3xl mx-auto text-center">
+          <div class="inline-flex text-sm font-semibold py-1 px-4 m-2 text-indigo-200 bg-indigo-900/50 rounded-full mb-4">Start Today</div>
+          <h2 class="h2 font-playfair-display text-white mb-4">Ready to invest in a sustainable future?</h2>
+          <p class="text-lg sm:text-xl text-slate-300 mb-8">Join thousands of investors making a positive impact on the planet while growing their portfolio with EnergyOne.</p>
+          <div class="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-none space-y-4 sm:space-y-0 sm:space-x-4">
+            <router-link to="/signup" class="btn text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/25 group w-full sm:w-auto">
+              Create Your Account <span class="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">→</span>
+            </router-link>
+            <router-link to="/dashboard" class="btn text-slate-200 bg-slate-700/80 hover:bg-slate-600 border border-slate-600 w-full sm:w-auto">
+              View Demo
+            </router-link>
           </div>
-
-          <!-- CTA button -->
-          <div class="shrink-0">
-            <a class="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full group shadow-lg" href="#0">
-              Start Free Trial <span class="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
-            </a>
-          </div>
-
         </div>
-
       </div>
-
     </div>
   </section>
 </template>
@@ -36,5 +28,15 @@
 <script>
 export default {
   name: 'Cta',
-}
+};
 </script>
+
+<style scoped>
+.h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg border border-transparent px-4 py-3 text-base font-medium transition duration-150 ease-in-out;
+}
+</style>
