@@ -2,14 +2,33 @@
 <template>
   <div class="min-h-screen min-h-[calc(var(--vh,1vh)*100)] w-full bg-slate-900 flex flex-col">
     <!-- Header -->
-    <header class="bg-slate-800 shadow-sm sticky top-0 z-50">
+    <header class="bg-slate-900 shadow-sm sticky top-0 z-50 backdrop-blur-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div class="flex justify-between h-16 items-center">
           <div class="flex">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-              <router-link to="/" class="text-xl font-bold text-indigo-400">
-                EnergyOne
+              <router-link to="/" class="flex items-center">
+                <svg class="w-8 h-8" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <radialGradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradientTransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo1-b">
+                      <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%" />
+                      <stop stop-color="#F472B6" stop-opacity=".876" offset="100%" />
+                    </radialGradient>
+                    <radialGradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradientTransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo1-d">
+                      <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%" />
+                      <stop stop-color="#D375C2" stop-opacity=".833" offset="50.358%" />
+                      <stop stop-color="#FBCFE8" stop-opacity=".876" offset="100%" />
+                    </radialGradient>
+                    <path d="M12 32c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S0 8.373 0 15c0 4.418 4 10.085 12 17Z" id="logo1-a" />
+                    <path d="M20 29c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S8 5.373 8 12c0 4.418 4 10.085 12 17Z" id="logo1-c" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <use fill="url(#logo1-b)" opacity=".64" transform="matrix(1 0 0 -1 0 35)" xlink:href="#logo1-a" />
+                    <use fill="url(#logo1-d)" opacity=".961" xlink:href="#logo1-c" />
+                  </g>
+                </svg>
+                <span class="text-xl font-bold text-blue-400 ml-2">EnergyOne</span>
               </router-link>
             </div>
           </div>
@@ -33,23 +52,22 @@
               <router-link 
                 to="/" 
                 class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                active-class="text-white bg-slate-700"
+                active-class="text-white bg-slate-800"
               >
                 Home
               </router-link>
               <router-link 
                 to="/signin" 
                 class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                active-class="text-white bg-slate-700"
+                active-class="text-white bg-slate-800"
               >
                 Sign In
               </router-link>
               <router-link 
                 to="/signup" 
-                class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                active-class="text-white bg-slate-700"
+                class="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 shadow-lg group"
               >
-                Sign Up
+                Sign Up <span class="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">→</span>
               </router-link>
             </nav>
           </div>
@@ -77,8 +95,7 @@
           </router-link>
           <router-link 
             to="/signup" 
-            class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700 rounded-md"
-            active-class="bg-slate-700 text-white"
+            class="block px-3 py-2 text-base font-medium text-center text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 rounded-md shadow-lg"
             @click="mobileMenuOpen = false"
           >
             Sign Up
