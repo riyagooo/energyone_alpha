@@ -3,10 +3,13 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
+// Repository name for GitHub Pages
+const repoName = 'energyone_alpha' 
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/',  // Set to '/' for root domain or '/energyone/' for subfolder
+  base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',  // Set correct base for GitHub Pages
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
