@@ -3,8 +3,8 @@
     <div class="mb-8 text-center">
       <h1 class="text-3xl font-bold text-slate-800 mb-4">Welcome to EnergyOne</h1>
       <p class="text-lg text-slate-600 max-w-xl mx-auto">Discover global renewable energy opportunities at your fingertips</p>
-    </div>
-    
+            </div>
+
     <div class="max-w-3xl mx-auto px-4">
       <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
         <div class="mb-6">
@@ -16,11 +16,11 @@
             <WorldTour :width="responsive.width" />
           </div>
         </div>
-        
+
         <div class="flex justify-between mt-8">
           <button @click="handleBack" class="btn-sm bg-white border-slate-200 hover:border-slate-300 text-slate-600">Back</button>
           <button @click="handleNext" class="btn-sm bg-blue-500 hover:bg-blue-600 text-white">Continue</button>
-        </div>
+      </div>
       </div>
     </div>
   </div>
