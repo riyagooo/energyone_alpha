@@ -1,12 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy to Cloudflare Pages
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   build-and-deploy:
@@ -26,16 +23,11 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: Copy files to docs directory
-        run: |
-          rm -rf docs/*
-          cp -r dist/* docs/
-          cp .nojekyll docs/ || touch docs/.nojekyll
-          
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add docs .nojekyll
-          git commit -m "Deploy website to GitHub Pages" || echo "No changes to commit"
-          git push
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: energyone
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
