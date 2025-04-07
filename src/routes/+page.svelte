@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Hero from './Hero.svelte';
+	import Stats from './Stats.svelte';
+	import Testimonals from './Testimonals.svelte';
+	import Bento from './Bento.svelte';
+</script>
+
+<Hero />
+<Stats />
+<Bento />
+<Testimonals />
+
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
