@@ -1,8 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -33,7 +35,7 @@ module.exports = {
     },
   },
   plugins: [
-    // eslint-disable-next-line global-require
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
 };

@@ -14,6 +14,7 @@ const Onboarding02 = () => import('@/apps/mosaic/src/pages/Onboarding02.vue')
 const Onboarding03 = () => import('@/apps/mosaic/src/pages/Onboarding03.vue')
 const Onboarding04 = () => import('@/apps/mosaic/src/pages/Onboarding04.vue')
 const Fintech = () => import('@/apps/mosaic/src/pages/Fintech.vue')
+const Shop2 = () => import('@/apps/mosaic/src/pages/ecommerce/Shop2.vue')
 
 // Define routes to be used as children of /dashboard in main router
 const routes = [
@@ -60,6 +61,10 @@ const routes = [
   {
     path: 'onboarding/step-4',
     component: Onboarding04,
+  },
+  {
+    path: 'ecommerce/shop-2',
+    component: Shop2,
   }
 ];
 

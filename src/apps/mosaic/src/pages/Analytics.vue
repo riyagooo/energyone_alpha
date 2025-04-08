@@ -20,14 +20,6 @@
             <div class="mb-4 sm:mb-0">
               <h1 class="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold">Analytics ✨</h1>
             </div>
-        
-            <!-- Right: Actions -->
-            <div class="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                
-              <!-- Datepicker built with flatpickr -->
-              <Datepicker align="right" />
-                
-            </div>
           
           </div>
 

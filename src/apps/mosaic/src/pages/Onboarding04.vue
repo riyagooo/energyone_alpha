@@ -237,8 +237,8 @@ export default {
       // Update user status
       authStore.isNewUser = false
       
-      // Redirect to main dashboard
-      router.push('/dashboard')
+      // Redirect to shop page
+      router.push('/dashboard/ecommerce/shop-2')
     }
     
     return {

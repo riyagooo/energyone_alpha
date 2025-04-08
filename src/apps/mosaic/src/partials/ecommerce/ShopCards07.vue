@@ -29,9 +29,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -105,9 +105,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -190,9 +190,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -266,9 +266,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -342,9 +342,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -427,9 +427,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -503,9 +503,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -579,9 +579,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -655,9 +655,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -742,9 +742,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -818,9 +818,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -894,9 +894,9 @@
         <!-- Card body -->
         <div class="grow">
           <header class="mb-2">
-            <a href="#0">
+            <router-link to="/dashboard/analytics">
               <h3 class="text-lg text-slate-800 dark:text-slate-100 font-semibold mb-1">Form Builder CP</h3>
-            </a>
+            </router-link>
             <div class="text-sm">Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod.</div>
           </header>
         </div>
@@ -951,7 +951,16 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
+
 export default {
   name: 'ShopCards07',
+  setup() {
+    const router = useRouter()
+    
+    return {
+      router
+    }
+  }
 }
 </script>

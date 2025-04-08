@@ -98,16 +98,25 @@
                   </div>
                 </form>
 
-                <!-- For demonstration purposes - direct link to dashboard -->
+                <!-- For demonstration purposes - testing shortcuts -->
                 <div class="mt-4 text-center">
                   <p class="text-sm text-gray-400 mb-2">For testing purposes:</p>
-                  <button 
-                    @click="directToDashboard" 
-                    class="text-sm font-medium text-blue-500 hover:text-blue-400 interactive-element"
-                    style="z-index: 10;"
-                  >
-                    Skip login and go directly to dashboard
-                  </button>
+                  <div class="flex justify-between">
+                    <button 
+                      @click="skipToOnboarding" 
+                      class="text-sm font-medium text-blue-500 hover:text-blue-400 interactive-element"
+                      style="z-index: 10;"
+                    >
+                      Skip to onboarding
+                    </button>
+                    <button 
+                      @click="directToDashboard" 
+                      class="text-sm font-medium text-blue-500 hover:text-blue-400 interactive-element"
+                      style="z-index: 10;"
+                    >
+                      Skip to dashboard
+                    </button>
+                  </div>
                 </div>
 
                 <!-- Divider -->
@@ -219,6 +228,25 @@ export default {
       // Use Vue Router for navigation
       router.push('/dashboard')
     }
+    
+    const skipToOnboarding = (e) => {
+      // Prevent default behavior
+      if (e) e.preventDefault()
+      
+      // For testing - manually set auth state as a new user
+      authStore.user = {
+        id: '1',
+        email: 'test@example.com',
+        name: 'Test User'
+      }
+      authStore.isAuthenticated = true
+      authStore.isNewUser = true
+      
+      console.log('Skipping to onboarding: Auth set, navigating...')
+      
+      // Use Vue Router for navigation
+      router.push('/dashboard/onboarding/step-1')
+    }
 
     return {
       authStore,
@@ -226,7 +254,8 @@ export default {
       loading,
       loginError,
       handleSubmit,
-      directToDashboard
+      directToDashboard,
+      skipToOnboarding
     }
   }
 }
