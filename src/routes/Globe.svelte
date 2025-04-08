@@ -190,7 +190,7 @@
 		if (countries) {
 			context.beginPath();
 			path(countries);
-			context.fillStyle = '#ccc';
+			context.fillStyle = '#bcd';
 			context.fill();
 		}
 
@@ -198,15 +198,15 @@
 		if (borders) {
 			context.beginPath();
 			path(borders);
-			context.strokeStyle = '#fff';
-			context.lineWidth = 0.5;
+			context.strokeStyle = '#000';
+			context.lineWidth = 1.5;
 			context.stroke();
 		}
 
 		// Draw the outline of the sphere
 		context.beginPath();
 		path(globe);
-		context.strokeStyle = '#000';
+		context.strokeStyle = '#fff';
 		context.lineWidth = 1.5;
 		context.stroke();
 
@@ -214,7 +214,7 @@
 		if (arc) {
 			context.beginPath();
 			path(arc);
-			context.strokeStyle = 'red';
+			context.strokeStyle = 'indigo';
 			context.lineWidth = 2;
 			context.stroke();
 		}
