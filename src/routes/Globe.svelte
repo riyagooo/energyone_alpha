@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
 	import * as topojson from 'topojson';
+	import topodata from '$lib/countries-110m.json';
 
 	/*********************************************************
 	 *  Versor helper class (from your original code example)
@@ -131,18 +132,14 @@
 	 *  Load TopoJSON + convert to GeoJSON
 	 *********************************************************/
 	async function loadData() {
-		// This is a ~110m scale TopoJSON of countries from world-atlas
-		const url = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
-		const topoData = await d3.json(url);
-
 		// Convert from TopoJSON -> GeoJSON (FeatureCollection)
 		// The object name in countries-110m.json is "countries"
-		const world = topojson.feature(topoData, topoData.objects.countries);
+		const world = topojson.feature(topodata, topodata.objects.countries);
 		countries = world;
 
 		// For nice stroke lines between countries:
 		// A mesh of adjacent polygons (ignore interior boundaries within the same country)
-		borders = topojson.mesh(topoData, topoData.objects.countries, (a, b) => a !== b);
+		borders = topojson.mesh(topodata, topodata.objects.countries, (a, b) => a !== b);
 	}
 
 	/*********************************************************
@@ -318,7 +315,6 @@
 		];
 		while (true) {
 			for (const project of greenEnergyProjects) {
-				console.log(project);
 				const { country, project: projectName, latitude, longitude } = project;
 				goToCoordinates(longitude, latitude);
 				await new Promise((resolve) => setTimeout(resolve, 3000));

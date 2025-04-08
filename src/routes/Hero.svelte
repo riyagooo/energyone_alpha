@@ -3,75 +3,19 @@
 </script>
 
 <div class="bg-white" id="hero">
-	<header class="absolute inset-x-0 top-0 z-50">
-		<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-			<div class="flex lg:flex-1">
-				<a href="#" class="-m-1.5 p-1.5">
-					<span class="sr-only">Your Company</span>
-					<img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
-				</a>
-			</div>
-			<div class="flex lg:hidden">
-				<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-					<span class="sr-only">Open main menu</span>
-					<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-					</svg>
-				</button>
-			</div>
-			<div class="hidden lg:flex lg:gap-x-12">
-				<a href="#" class="text-sm/6 font-semibold text-gray-900">Product</a>
-				<a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
-				<a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-				<a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
-			</div>
-			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-			</div>
-		</nav>
-		<!-- Mobile menu, show/hide based on menu open state. -->
-		<div class="lg:hidden" role="dialog" aria-modal="true">
-			<!-- Background backdrop, show/hide based on slide-over state. -->
-			<div class="fixed inset-0 z-50"></div>
-			<div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-				<div class="flex items-center justify-between">
-					<a href="#" class="-m-1.5 p-1.5">
-						<span class="sr-only">Your Company</span>
-						<img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
-					</a>
-					<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-						<span class="sr-only">Close menu</span>
-						<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-				<div class="mt-6 flow-root">
-					<div class="-my-6 divide-y divide-gray-500/10">
-						<div class="space-y-2 py-6">
-							<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
-							<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-							<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-							<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
-						</div>
-						<div class="py-6">
-							<a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
 	<div class="relative isolate pt-14">
-		<svg class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+		<svg
+			class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+			aria-hidden="true">
 			<defs>
-				<pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+				<pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="50%" y="-1"
+								 patternUnits="userSpaceOnUse">
 					<path d="M100 200V.5M.5 .5H200" fill="none" />
 				</pattern>
 			</defs>
 			<svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-				<path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+				<path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+							stroke-width="0" />
 			</svg>
 			<rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
 		</svg>
@@ -79,15 +23,20 @@
 			<div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
 				<div class="flex">
 				</div>
-				<h1 class="mt-10 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">Power Your Investment Portfolio</h1>
-				<p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Join thousands of investors funding the renewable energy revolution with our transparent, data-driven platform.</p>
+				<h1 class="mt-10 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">Power Your
+					Investment Portfolio</h1>
+				<p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Join thousands of investors funding
+					the renewable energy revolution with our transparent, data-driven platform.</p>
 				<div class="mt-10 flex items-center gap-x-6">
-					<a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-					<a href="#stats" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+					<a href="/signup"
+						 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+						started</a>
+					<a href="#stats" class="text-sm/6 font-semibold text-gray-900">Learn more <span
+						aria-hidden="true">→</span></a>
 				</div>
 			</div>
 			<div class="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
-				<Globe longitude="50" latitude="50"/>
+				<Globe />
 			</div>
 		</div>
 	</div>

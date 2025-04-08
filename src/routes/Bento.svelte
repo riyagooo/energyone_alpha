@@ -1,4 +1,4 @@
-<div class="bg-gray-900 py-24 sm:py-32">
+<div class="bg-gray-900 py-24 sm:py-32" id="bento">
 	<div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 		<h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
 		<p class="mt-2 max-w-lg text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Everything you need to deploy your app</p>

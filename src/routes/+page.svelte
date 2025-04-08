@@ -3,8 +3,11 @@
 	import Stats from './Stats.svelte';
 	import Testimonals from './Testimonals.svelte';
 	import Bento from './Bento.svelte';
+	import Nav from './Nav.svelte';
 </script>
 
+
+<Nav />
 <Hero />
 <Stats />
 <Bento />
