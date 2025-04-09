@@ -33,7 +33,7 @@
 					<a href="#testimonials" class="text-slate-600 hover:text-emerald-600">Testimonials</a>
 					<a href="/contact" class="text-slate-600 hover:text-emerald-600">Contact</a>
 					<a
-						href="/auth/signup"
+						href="/signup"
 						class="px-4 py-2 rounded-md text-white bg-emerald-600 hover:bg-emerald-700"
 					>
 						Get Started
@@ -69,7 +69,7 @@
 					<a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-emerald-600">Testimonials</a>
 					<a href="/contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-emerald-600">Contact</a>
 					<a
-						href="/auth/signup"
+						href="/signup"
 						class="block px-3 py-2 rounded-md text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700"
 					>
 						Get Started

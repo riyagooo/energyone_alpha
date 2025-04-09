@@ -39,7 +39,7 @@
 			</div>
 			<div class="hidden sm:ml-6 sm:flex sm:items-center">
 				<a
-					href="/auth/login"
+					href="/login"
 					class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 				>
 					Log in
@@ -100,7 +100,7 @@
 			</div>
 			<div class="border-t border-gray-200 pb-3 pt-4">
 				<a
-					href="/auth/login"
+					href="/login"
 					class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
 				>
 					Log in

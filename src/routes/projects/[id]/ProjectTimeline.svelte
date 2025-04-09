@@ -22,19 +22,19 @@
   <header class="px-5 py-4 border-b border-slate-100 dark:border-slate-700">
     <h2 class="font-semibold text-slate-800 dark:text-slate-100">Project Timeline</h2>
   </header>
-  
+
   <div class="px-5 py-4">
     <div class="relative">
       <!-- Timeline line -->
       <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700"></div>
-      
+
       <!-- Timeline items -->
       <div class="space-y-6">
         {#each milestones as milestone, i}
           <div class="relative pl-12">
             <!-- Timeline dot -->
             <div class="absolute left-3 top-1 w-3 h-3 rounded-full bg-indigo-500 border-2 border-white dark:border-slate-800"></div>
-            
+
             <!-- Timeline content -->
             <div class="bg-slate-50 dark:bg-slate-700/50 rounded p-4">
               <div class="flex items-center justify-between mb-1">
@@ -54,4 +54,4 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
