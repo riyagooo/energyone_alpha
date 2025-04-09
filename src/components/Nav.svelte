@@ -1,72 +1,111 @@
 <script>
 	import { page } from '$app/stores';
-	let showMenu = $state(false)
+	let showMenu = false;
 </script>
 
-<header class="absolute inset-x-0 top-0 z-50">
-	<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-		<div class="flex lg:flex-1">
-			<a href="/" class="-m-1.5 p-1.5">
-				<span class="sr-only">EnergyOne</span>
-				<img class="h-8 w-auto" src="/logo.svg" alt="EnergyOne Logo">
-			</a>
-		</div>
-		<div class="flex lg:hidden">
-			<button
-				type="button"
-				class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-				aria-label="Open main menu"
-			>
-				<span class="sr-only">Open main menu</span>
-				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-				</svg>
-			</button>
-		</div>
-		<div class="hidden lg:flex lg:gap-x-12">
-			<a href="/shop" class="text-sm font-semibold leading-6 text-gray-900">Projects</a>
-			<a href="/about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
-			<a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
-		</div>
-		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-			<a href="/auth/login" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-		</div>
-	</nav>
-	<!-- Mobile menu, show/hide based on menu open state. -->
-	{#if showMenu}
-		<div class="lg:hidden" role="dialog" aria-modal="true">
-			<!-- Background backdrop, show/hide based on slide-over state. -->
-			<div class="fixed inset-0 z-50"></div>
-			<div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-				<div class="flex items-center justify-between">
-					<a href="/" class="-m-1.5 p-1.5">
-						<span class="sr-only">EnergyOne</span>
-						<img class="h-8 w-auto" src="/logo.svg" alt="EnergyOne Logo">
-					</a>
-					<button
-						type="button"
-						class="-m-2.5 rounded-md p-2.5 text-gray-700"
-						aria-label="Close menu"
+<nav class="bg-white shadow">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="flex h-16 justify-between">
+			<div class="flex">
+				<a href="/" class="flex flex-shrink-0 items-center">
+					<img class="h-8 w-auto" src="/logo.svg" alt="EnergyOne Logo" />
+				</a>
+				<div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+					<a
+						href="/shop"
+						class="inline-flex items-center border-b-2 {$page.url.pathname === '/shop'
+							? 'border-indigo-500 text-gray-900'
+							: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'} px-1 pt-1 text-sm font-medium"
 					>
-						<span class="sr-only">Close menu</span>
-						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+						Projects
+					</a>
+					<a
+						href="/about"
+						class="inline-flex items-center border-b-2 {$page.url.pathname === '/about'
+							? 'border-indigo-500 text-gray-900'
+							: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'} px-1 pt-1 text-sm font-medium"
+					>
+						About
+					</a>
+					<a
+						href="/contact"
+						class="inline-flex items-center border-b-2 {$page.url.pathname === '/contact'
+							? 'border-indigo-500 text-gray-900'
+							: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'} px-1 pt-1 text-sm font-medium"
+					>
+						Contact
+					</a>
+				</div>
+			</div>
+			<div class="hidden sm:ml-6 sm:flex sm:items-center">
+				<a
+					href="/auth/login"
+					class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+				>
+					Log in
+				</a>
+			</div>
+			<div class="-mr-2 flex items-center sm:hidden">
+				<!-- Mobile menu button -->
+				<button
+					type="button"
+					class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+					aria-controls="mobile-menu"
+					aria-expanded={showMenu}
+					on:click={() => (showMenu = !showMenu)}
+				>
+					<span class="sr-only">Open main menu</span>
+					{#if !showMenu}
+						<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+					{:else}
+						<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
-					</button>
-				</div>
-				<div class="mt-6 flow-root">
-					<div class="-my-6 divide-y divide-gray-500/10">
-						<div class="space-y-2 py-6">
-							<a href="/shop" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
-							<a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-							<a href="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
-						</div>
-						<div class="py-6">
-							<a href="/auth/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-						</div>
-					</div>
-				</div>
+					{/if}
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mobile menu -->
+	{#if showMenu}
+		<div class="sm:hidden" id="mobile-menu">
+			<div class="space-y-1 pb-3 pt-2">
+				<a
+					href="/shop"
+					class="block border-l-4 {$page.url.pathname === '/shop'
+						? 'border-indigo-500 bg-indigo-50 text-indigo-700'
+						: 'border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'} py-2 pl-3 pr-4 text-base font-medium"
+				>
+					Projects
+				</a>
+				<a
+					href="/about"
+					class="block border-l-4 {$page.url.pathname === '/about'
+						? 'border-indigo-500 bg-indigo-50 text-indigo-700'
+						: 'border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'} py-2 pl-3 pr-4 text-base font-medium"
+				>
+					About
+				</a>
+				<a
+					href="/contact"
+					class="block border-l-4 {$page.url.pathname === '/contact'
+						? 'border-indigo-500 bg-indigo-50 text-indigo-700'
+						: 'border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'} py-2 pl-3 pr-4 text-base font-medium"
+				>
+					Contact
+				</a>
+			</div>
+			<div class="border-t border-gray-200 pb-3 pt-4">
+				<a
+					href="/auth/login"
+					class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
+				>
+					Log in
+				</a>
 			</div>
 		</div>
 	{/if}
-</header>
+</nav>

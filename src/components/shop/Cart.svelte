@@ -38,11 +38,11 @@
 
 <!-- Cart Overlay -->
 {#if isOpen}
-  <div
+  <button
+    type="button"
     class="fixed inset-0 bg-black/20 z-40"
     on:click={() => (isOpen = false)}
-    role="button"
-    tabindex="0"
+    on:keydown={e => e.key === 'Escape' && (isOpen = false)}
     aria-label="Close cart"
   />
 {/if}

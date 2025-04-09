@@ -1,83 +1,55 @@
 <script>
+  /** @type {import('$lib/types/project').Project} */
   export let project;
 
   const teamMembers = [
     {
-      name: 'Project Manager',
-      role: 'Senior Project Manager',
-      experience: '15+ years in renewable energy',
-      image: '/images/team/project-manager.jpg'
+      name: project.team.developer,
+      role: 'Developer',
+      description: 'Lead project developer responsible for overall project execution.'
     },
     {
-      name: 'Technical Lead',
-      role: 'Chief Technical Officer',
-      experience: '12+ years in solar and wind projects',
-      image: '/images/team/technical-lead.jpg'
+      name: project.team.epc,
+      role: 'EPC Contractor',
+      description: 'Engineering, Procurement, and Construction services.'
     },
     {
-      name: 'Financial Analyst',
-      role: 'Senior Financial Analyst',
-      experience: '10+ years in energy project financing',
-      image: '/images/team/financial-analyst.jpg'
+      name: project.team.oem,
+      role: 'Equipment Manufacturer',
+      description: 'Primary equipment supplier and technical support.'
     },
     {
-      name: 'Environmental Specialist',
-      role: 'Environmental Impact Consultant',
-      experience: '8+ years in environmental assessment',
-      image: '/images/team/environmental-specialist.jpg'
+      name: project.team.om,
+      role: 'O&M Provider',
+      description: 'Operations and maintenance services provider.'
+    },
+    {
+      name: project.team.legal,
+      role: 'Legal Advisor',
+      description: 'Legal and regulatory compliance support.'
+    },
+    {
+      name: project.team.technical,
+      role: 'Technical Advisor',
+      description: 'Technical due diligence and engineering support.'
     }
   ];
 </script>
 
-<div class="bg-white rounded-lg shadow-sm p-6">
-  <h2 class="text-lg font-semibold text-slate-900 mb-6">Project Team</h2>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {#each teamMembers as member}
-      <div class="flex items-start space-x-4 p-4 bg-slate-50 rounded-lg">
-        <div class="flex-shrink-0">
-          <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center">
-            <span class="text-2xl font-semibold text-slate-400">
-              {member.name.charAt(0)}
-            </span>
+<div class="bg-white shadow sm:rounded-lg">
+  <div class="px-4 py-5 sm:p-6">
+    <h3 class="text-base font-semibold leading-6 text-gray-900">Project Team</h3>
+    <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {#each teamMembers as member}
+        <div class="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400">
+          <div class="min-w-0 flex-1">
+            <span class="absolute inset-0" aria-hidden="true" />
+            <p class="text-sm font-medium text-gray-900">{member.name}</p>
+            <p class="truncate text-sm text-gray-500">{member.role}</p>
+            <p class="mt-1 text-sm text-gray-500">{member.description}</p>
           </div>
         </div>
-        <div class="flex-1 min-w-0">
-          <h3 class="text-sm font-medium text-slate-900">{member.name}</h3>
-          <p class="text-sm text-slate-500">{member.role}</p>
-          <p class="mt-1 text-xs text-slate-400">{member.experience}</p>
-        </div>
-      </div>
-    {/each}
-  </div>
-
-  <div class="mt-6">
-    <h3 class="text-sm font-medium text-slate-900 mb-4">Key Responsibilities</h3>
-    <ul class="space-y-2">
-      <li class="flex items-start">
-        <svg class="h-5 w-5 text-emerald-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span class="ml-2 text-sm text-slate-600">Project planning and execution</span>
-      </li>
-      <li class="flex items-start">
-        <svg class="h-5 w-5 text-emerald-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span class="ml-2 text-sm text-slate-600">Technical design and implementation</span>
-      </li>
-      <li class="flex items-start">
-        <svg class="h-5 w-5 text-emerald-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span class="ml-2 text-sm text-slate-600">Financial modeling and analysis</span>
-      </li>
-      <li class="flex items-start">
-        <svg class="h-5 w-5 text-emerald-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span class="ml-2 text-sm text-slate-600">Environmental impact assessment</span>
-      </li>
-    </ul>
+      {/each}
+    </div>
   </div>
 </div> 
