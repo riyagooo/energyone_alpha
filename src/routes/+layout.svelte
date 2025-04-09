@@ -1,7 +1,5 @@
-<script lang="ts">
+<script>
 	import '../app.css';
-	
-	let { children } = $props();
 	import { onNavigate } from '$app/navigation';
 
 	onNavigate((navigation) => {
@@ -18,7 +16,7 @@
 	});
 </script>
 
-{@render children()}
+<slot />
 
 <style>
     @keyframes fade-in {
