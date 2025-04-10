@@ -27,7 +27,7 @@
 
 <!-- Cart Button -->
 <button
-  class="fixed bottom-4 right-4 z-50 p-3 bg-emerald-600 text-white rounded-full shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+  class="fixed bottom-4 right-4 z-50 p-3 bg-gradient-to-t from-blue-600 to-blue-400 text-white rounded-full shadow-lg hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
   on:click={() => (isOpen = !isOpen)}
   aria-label="Open cart"
 >
@@ -153,7 +153,7 @@
         </div>
       </div>
       <button
-        class="mt-4 w-full py-2 px-4 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+        class="mt-4 w-full py-2 px-4 bg-gradient-to-t from-blue-600 to-blue-400 text-white rounded-lg hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
         disabled={cart.length === 0}
       >
         Proceed to Checkout

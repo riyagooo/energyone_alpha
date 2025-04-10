@@ -117,7 +117,7 @@
   ];
 </script>
 
-<div class="min-h-screen bg-slate-900 text-white">
+<div class="bg-slate-900 text-white">
   <main class="grow">
     <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-7xl mx-auto">
 

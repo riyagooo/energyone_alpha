@@ -1,5 +1,10 @@
 <script>
 	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
+	
+	function skipToPortfolio() {
+		goto('/portfolio-dashboard');
+	}
 </script>
 
 <!--
@@ -60,7 +65,16 @@
 			</div>
 		</form>
 
-		<p class="mt-10 text-center text-sm text-slate-400">
+		<div class="mt-4 text-center">
+			<button 
+				on:click={skipToPortfolio}
+				class="font-semibold text-blue-400 hover:text-blue-300"
+			>
+				Continue without signing in
+			</button>
+		</div>
+
+		<p class="mt-6 text-center text-sm text-slate-400">
 			Not a member?
 			<a href="/signup" class="font-semibold leading-6 text-blue-400 hover:text-blue-300">Start your investment journey</a>
 		</p>

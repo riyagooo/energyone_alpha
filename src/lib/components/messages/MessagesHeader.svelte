@@ -10,7 +10,7 @@
   };
 </script>
 
-<div class="sticky top-0 bg-slate-800 border-b border-slate-700 h-16 flex items-center px-4 md:px-6 justify-between z-30">
+<div class="bg-slate-800 border-b border-slate-700 h-16 flex items-center px-4 md:px-6 justify-between z-20">
   <div class="flex items-center">
     <!-- Toggle button for sidebar -->
     <button 

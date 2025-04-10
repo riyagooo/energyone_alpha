@@ -15,7 +15,7 @@
   }
 </script>
 
-<div class="relative flex h-full">
+<div class="flex h-full pt-16">
   <!-- Messages sidebar -->
   <MessagesSidebar {msgSidebarOpen} on:closeMsgSidebar={closeMsgSidebar} />
 

@@ -15,73 +15,8 @@
 </script>
 
 <div class="min-h-screen min-h-[calc(var(--vh,1vh)*100)] w-full bg-slate-900 flex flex-col">
-	<!-- Navigation -->
-	<nav
-		class={`fixed w-full z-50 transition-all duration-200 ${
-			isScrolled ? 'bg-slate-900 shadow-sm' : 'bg-transparent'
-		}`}
-	>
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="flex justify-between h-16">
-				<div class="flex">
-					<div class="flex-shrink-0 flex items-center">
-						<a href="/" class="text-2xl font-bold text-blue-400">EnergyOne</a>
-					</div>
-				</div>
-				<div class="hidden md:flex items-center space-x-8">
-					<a href="/shop" class="text-slate-300 hover:text-white">Projects</a>
-					<a href="/communities" class="text-slate-300 hover:text-white">Communities</a>
-					<a href="/messages" class="text-slate-300 hover:text-white">Messages</a>
-					<a href="/contact" class="text-slate-300 hover:text-white">Contact</a>
-					<a
-						href="/login"
-						class="px-4 py-2 rounded-md text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 shadow-lg"
-					>
-						Log in
-					</a>
-				</div>
-				<div class="flex items-center md:hidden">
-					<button
-						type="button"
-						class="text-slate-300 hover:text-white"
-						on:click={() => (isMenuOpen = !isMenuOpen)}
-					>
-						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							{#if isMenuOpen}
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-							{:else}
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-							{/if}
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
-
-		<!-- Mobile menu -->
-		{#if isMenuOpen}
-			<div
-				class="md:hidden"
-				transition:fade={{ duration: 200, easing: cubicOut }}
-			>
-				<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800">
-					<a href="/shop" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Projects</a>
-					<a href="/communities" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Communities</a>
-					<a href="/messages" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Messages</a>
-					<a href="/contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Contact</a>
-					<a
-						href="/login"
-						class="block px-3 py-2 rounded-md text-base font-medium text-center text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 shadow-lg"
-					>
-						Log in
-					</a>
-				</div>
-			</div>
-		{/if}
-	</nav>
-
 	<!-- Hero Section -->
-	<section class="py-8 sm:py-12 bg-gradient-to-b from-gray-900 to-slate-900">
+	<section class="pt-16 py-8 sm:py-12 bg-gradient-to-b from-gray-900 to-slate-900">
 		<div class="max-w-6xl mx-auto px-4 sm:px-6">
 			<div class="relative">
 				<!-- Background shape with neon glow -->
