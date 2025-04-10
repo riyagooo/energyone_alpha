@@ -26,17 +26,17 @@
           </a>
           <a 
             href="/communities" 
-            class="text-slate-300 hover:text-white"
-            class:text-white={$page.url.pathname.startsWith('/communities')}
-            class:border-b-2={$page.url.pathname.startsWith('/communities')}
-            class:border-blue-400={$page.url.pathname.startsWith('/communities')}
-            class:pb-1={$page.url.pathname.startsWith('/communities')}
+            class="text-white border-b-2 border-blue-400 pb-1"
           >
             Communities
           </a>
           <a 
             href="/messages" 
-            class="text-white border-b-2 border-blue-400 pb-1"
+            class="text-slate-300 hover:text-white"
+            class:text-white={$page.url.pathname.startsWith('/messages')}
+            class:border-b-2={$page.url.pathname.startsWith('/messages')}
+            class:border-blue-400={$page.url.pathname.startsWith('/messages')}
+            class:pb-1={$page.url.pathname.startsWith('/messages')}
           >
             Messages
           </a>
@@ -57,13 +57,12 @@
             Log in
           </a>
         </div>
+        <!-- Mobile menu button -->
         <div class="flex items-center md:hidden">
           <button
             type="button"
             class="text-slate-300 hover:text-white"
-            aria-expanded="false"
           >
-            <span class="sr-only">Open main menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -73,12 +72,8 @@
     </div>
   </nav>
 
-  <div class="flex h-[calc(100dvh-64px)] mt-16 overflow-hidden">
-    <!-- Content area -->
-    <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-      <main class="grow">
-        <slot />
-      </main>
-    </div>
+  <!-- Main content -->
+  <div class="pt-16">
+    <slot />
   </div>
 </div> 

@@ -30,7 +30,7 @@
 				</div>
 				<div class="hidden md:flex items-center space-x-8">
 					<a href="/shop" class="text-slate-300 hover:text-white">Projects</a>
-					<a href="#features" class="text-slate-300 hover:text-white">Communities</a>
+					<a href="/communities" class="text-slate-300 hover:text-white">Communities</a>
 					<a href="/messages" class="text-slate-300 hover:text-white">Messages</a>
 					<a href="/contact" class="text-slate-300 hover:text-white">Contact</a>
 					<a
@@ -66,7 +66,7 @@
 			>
 				<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800">
 					<a href="/shop" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Projects</a>
-					<a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Communities</a>
+					<a href="/communities" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Communities</a>
 					<a href="/messages" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Messages</a>
 					<a href="/contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white">Contact</a>
 					<a
