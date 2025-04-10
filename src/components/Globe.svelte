@@ -92,8 +92,8 @@
 	/*********************************************************
 	 *  Svelte Globe state
 	 *********************************************************/
-	let width = 600;
-	let height = 600;
+	let width = 400;  // Reduced from 500
+	let height = 400; // Keeping square aspect ratio
 
 	// We'll add a slight tilt to the globe's "pitch".
 	let tilt = 10;
@@ -111,7 +111,7 @@
 	// Our "globe" background – a simple sphere
 	let globe = { type: 'Sphere' };
 
-	// GeoJSON data we’ll fetch:
+	// GeoJSON data we'll fetch:
 	let countries; // Country polygons
 	let borders;   // Mesh for borders
 
@@ -183,11 +183,23 @@
 		// Clear the canvas
 		context.clearRect(0, 0, width, height);
 
+		// Create dark background for globe
+		context.beginPath();
+		path(globe);
+		const gradient = context.createRadialGradient(
+			width/2, height/2, 0,
+			width/2, height/2, height/2
+		);
+		gradient.addColorStop(0, '#1a1f35'); // Dark blue-gray center
+		gradient.addColorStop(0.9, '#111827'); // Darker edge
+		context.fillStyle = gradient;
+		context.fill();
+
 		// Draw all land
 		if (countries) {
 			context.beginPath();
 			path(countries);
-			context.fillStyle = '#bcd';
+			context.fillStyle = '#374151'; // Gray-700 - darker land fill
 			context.fill();
 		}
 
@@ -195,25 +207,31 @@
 		if (borders) {
 			context.beginPath();
 			path(borders);
-			context.strokeStyle = '#000';
-			context.lineWidth = 1.5;
+			context.strokeStyle = '#4b5563'; // Gray-600 - subtler borders
+			context.lineWidth = 0.5;
 			context.stroke();
 		}
 
-		// Draw the outline of the sphere
+		// Draw the outline of the sphere with glow
 		context.beginPath();
 		path(globe);
-		context.strokeStyle = '#fff';
-		context.lineWidth = 1.5;
+		context.shadowColor = '#60a5fa'; // Blue-400
+		context.shadowBlur = 12;
+		context.strokeStyle = '#60a5fa'; // Blue-400
+		context.lineWidth = 1;
 		context.stroke();
+		context.shadowBlur = 0;
 
 		// Optionally, draw an arc if provided
 		if (arc) {
 			context.beginPath();
 			path(arc);
-			context.strokeStyle = 'indigo';
+			context.strokeStyle = '#3b82f6'; // Blue-500
+			context.shadowColor = '#60a5fa'; // Blue-400
+			context.shadowBlur = 8;
 			context.lineWidth = 2;
 			context.stroke();
+			context.shadowBlur = 0;
 		}
 	}
 
@@ -330,10 +348,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 1rem;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 0.5rem; /* Changed from -0.5rem to 0.5rem to move down */
     }
 
-
+    canvas {
+        border-radius: 50%; /* Make sure the globe is perfectly round */
+        box-shadow: 0 0 15px 2px rgba(59, 130, 246, 0.2); /* Add slight glow */
+    }
 </style>
 
 <div class="container">
@@ -341,6 +365,4 @@
 		id="globeCanvas"
 		style="width:{width}px; height:{height}px">
 	</canvas>
-
-
 </div>

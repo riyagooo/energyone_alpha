@@ -1,32 +1,36 @@
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ params }) => {
-  // In a real app, this would fetch data from your API based on the project ID
-  const project = {
-    id: params.id,
-    name: 'Atacama Solar Park',
-    location: 'Antofagasta, Chile',
-    type: 'Solar PV',
-    capacity: '250 MW',
-    investment: 250000000,
-    riskScore: 3.2,
-    irr: 12.5,
-    riskLevel: 'Medium',
-    energySecurity: 4.8,
-    status: 'Operational',
+  // Get all projects from the shop data
+  const shopData = await import('../../shop/+page.server.js');
+  const projects = (await shopData.load()).projects;
+  
+  // Find the project with matching ID
+  const project = projects.find(p => p.id === parseInt(params.id));
+
+  if (!project) {
+    return {
+      status: 404,
+      error: new Error('Project not found')
+    };
+  }
+
+  // Add additional details for the project view
+  const projectDetails = {
+    ...project,
     developer: 'Solaris Energy',
     ppaTerm: 15,
     carbonOffset: 450000,
-    description: 'Large-scale solar PV project in the Atacama Desert, benefiting from one of the highest solar irradiance levels in the world.',
+    description: 'Large-scale renewable energy project with strong financial metrics and environmental benefits.',
     
     financials: {
-      totalInvestment: 250000000,
-      equity: 75000000,
-      debt: 175000000,
+      totalInvestment: project.investment,
+      equity: project.investment * 0.3,
+      debt: project.investment * 0.7,
       dscr: 1.8,
       paybackPeriod: 7.5,
-      npv: 45000000,
-      leveredIrr: 12.5,
-      unleveredIrr: 9.8,
+      npv: project.investment * 0.18,
+      leveredIrr: project.irr,
+      unleveredIrr: project.irr * 0.8,
       wacc: 7.2
     },
     
@@ -65,5 +69,5 @@ export const load = async ({ params }) => {
     }
   };
 
-  return { project };
+  return { project: projectDetails };
 };

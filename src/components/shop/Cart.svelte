@@ -1,21 +1,26 @@
-<script>
+<script lang="ts">
   import { fade } from 'svelte/transition';
-  import { formatCurrency } from '$lib/utils/format';
+  import { formatCurrency } from '$lib/utils/formatters';
+  import type { Project } from '$lib/types/project';
 
-  export let cart = [];
+  interface CartItem extends Project {
+    quantity: number;
+  }
+
+  export let cart: CartItem[] = [];
   export let isOpen = false;
 
-  function removeFromCart(projectId) {
+  function removeFromCart(projectId: number | string) {
     cart = cart.filter(item => item.id !== projectId);
   }
 
-  function updateQuantity(projectId, newQuantity) {
+  function updateQuantity(projectId: number | string, newQuantity: number) {
     cart = cart.map(item => 
       item.id === projectId ? { ...item, quantity: newQuantity } : item
     );
   }
 
-  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const subtotal = cart.reduce((sum, item) => sum + (item.investment * item.quantity), 0);
   const tax = subtotal * 0.1; // 10% tax
   const total = subtotal + tax;
 </script>
@@ -112,7 +117,7 @@
                     </button>
                   </div>
                   <span class="text-sm font-medium text-slate-900">
-                    {formatCurrency(item.price * item.quantity)}
+                    {formatCurrency(item.investment * item.quantity)}
                   </span>
                 </div>
               </div>
