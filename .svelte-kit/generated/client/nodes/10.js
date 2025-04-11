@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/investor-profile/question1/+page.svelte";

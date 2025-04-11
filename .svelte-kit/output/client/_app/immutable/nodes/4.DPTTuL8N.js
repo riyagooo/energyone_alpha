@@ -1,0 +1,1 @@
+import{t as e,a as s}from"../chunks/CYEPvI1U.js";import"../chunks/DAxizKm6.js";import{c as i,r as m}from"../chunks/xC3-kGY6.js";import{s as l}from"../chunks/iIn7HZDS.js";import"../chunks/CLAFF9o8.js";var p=e('<div class="flex flex-col min-h-screen bg-slate-900"><!></div>');function u(t,a){var o=p(),r=i(o);l(r,a,"default",{}),m(o),s(t,o)}export{u as component};

@@ -1,0 +1,31 @@
+{
+	"/": [],
+	"/communities": [],
+	"/contact": [],
+	"/dashboard": [],
+	"/investment-preferences": [],
+	"/investor-profile/question1": [],
+	"/investor-profile/question2": [],
+	"/investor-profile/question3": [],
+	"/investor-profile/question4": [],
+	"/investor-profile/question5": [],
+	"/login": [],
+	"/messages": [],
+	"/messages/channel/[id]": [],
+	"/messages/dm/[id]": [],
+	"/portfolio-dashboard": [],
+	"/projects/[id]": [
+		"src/routes/projects/[id]/+page.server.js",
+		"src/routes/projects/[id]/+layout.server.js",
+		"src/routes/projects/[id]/+layout.server.js"
+	],
+	"/projects/[id]/team": [
+		"src/routes/projects/[id]/team/+page.server.js",
+		"src/routes/projects/[id]/+layout.server.js"
+	],
+	"/recommended-portfolio": [],
+	"/shop": [
+		"src/routes/shop/+page.server.js"
+	],
+	"/signup": []
+}
