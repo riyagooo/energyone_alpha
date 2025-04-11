@@ -14,7 +14,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 12.5,
       status: 'Operational',
-      image: 'https://images.pexels.com/photos/4894575/pexels-photo-4894575.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/15751137/pexels-photo-15751137/free-photo-of-top-view-of-a-solar-panels.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Solaris Energy',
       description: 'Large-scale solar PV project in the Atacama Desert.',
       riskDetails: {
