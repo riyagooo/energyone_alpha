@@ -147,7 +147,7 @@
         irr: 9.4,
         investment: 12000000,
         minimumInvestment: 10000,
-        image: 'https://images.pexels.com/photos/1119972/pexels-photo-1119972.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/1108814/pexels-photo-1108814.jpeg?auto=compress&cs=tinysrgb&w=600',
         capacity: '75 MW',
         investmentType: 'debt',
         carbonOffset: 120000,
