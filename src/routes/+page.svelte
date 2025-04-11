@@ -33,7 +33,7 @@
 							EnergyOne: Power Your Investment Portfolio
 						</h1>
 						<div class="max-w-2xl mx-auto mb-6">
-							<p class="text-lg text-slate-300">Join thousands of investors funding the renewable energy revolution with our transparent, data-driven platform.</p>
+							<p class="text-lg text-slate-300">One stop solution to fund the renewable energy revolution.</p>
 						</div>
 						<div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
 							<a href="/signup" class="btn text-white bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-500 hover:to-blue-300 shadow-lg shadow-blue-500/20 rounded-full px-6 py-2 sm:px-8 sm:py-3 font-semibold w-full sm:w-auto">
@@ -273,138 +273,242 @@
 		</div>
 	</div>
 
-	<!-- Investment Options Section -->
-	<section class="bg-slate-900">
-		<div class="max-w-6xl mx-auto px-4 sm:px-6">
-			<div class="py-12 md:py-20 border-t border-slate-700">
-				
-				<!-- Section header -->
-				<div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-					<div class="inline-flex text-sm font-semibold py-1 px-4 m-2 text-amber-200 bg-amber-900/50 rounded-full mb-4">Investment Opportunities</div>
-					<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Choose Your Impact Investment</h2>
-					<p class="text-xl text-slate-400">Diversify your portfolio with sustainable energy projects at different scales and investment levels.</p>
+	<!-- Investment Opportunities Section -->
+	<section class="bg-gradient-to-b from-slate-900 to-slate-800 py-16 overflow-hidden relative">
+		<!-- Background decorative elements -->
+		<div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-900/5 rounded-full filter blur-3xl"></div>
+		<div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-900/5 rounded-full filter blur-3xl"></div>
+		
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+			<!-- Section header -->
+			<div class="max-w-3xl mx-auto text-center mb-16">
+				<div class="inline-flex text-sm font-semibold py-1 px-4 text-amber-200 bg-amber-900/30 rounded-full mb-4">
+					Investment Opportunities
 				</div>
+				<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+					Choose Your Impact Investment
+				</h2>
+				<p class="text-xl text-slate-400">
+					Diversify your portfolio with sustainable energy projects at different scales and investment levels.
+				</p>
+			</div>
 
-				<!-- Pricing tables -->
-				<div class="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
+			<!-- Energy Project Cards -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
+				<!-- Solar Energy Project -->
+				<div class="group bg-slate-800/60 rounded-xl overflow-hidden shadow-lg border border-slate-700/50">
+					<div class="relative h-48 overflow-hidden">
+						<div class="absolute inset-0 bg-emerald-900/20"></div>
+						<div class="absolute inset-0 flex items-center justify-center">
+							<div class="bg-emerald-500/90 p-3 rounded-lg shadow-lg">
+								<svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+								</svg>
+							</div>
+						</div>
+						<div class="absolute bottom-0 left-0 p-4 z-10">
+							<h3 class="text-xl font-bold text-white">Solar Energy</h3>
+						</div>
+					</div>
 					
-					<!-- Solar Energy Investment -->
-					<div class="relative flex flex-col h-full p-6 bg-slate-800 rounded-xl shadow-lg">
+					<div class="p-5">
 						<div class="mb-4">
-							<div class="text-emerald-400 bg-emerald-900/50 rounded-full w-12 h-12 flex items-center justify-center mb-3">
-								<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12 17.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V18a.75.75 0 0 1 .75-.75Zm0-13.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V4.5a.75.75 0 0 1 .75-.75Zm6.44 2.03a.75.75 0 0 1 0 1.06l-1.591 1.591a.75.75 0 0 1-1.06-1.06l1.591-1.591a.75.75 0 0 1 1.06 0ZM7.197 14.384a.75.75 0 0 0 1.06 1.06l-1.591 1.591a.75.75 0 0 1-1.06-1.06l1.591-1.591ZM18 12a.75.75 0 0 1 .75.75h2.25a.75.75 0 0 1 0 1.5H18.75A.75.75 0 0 1 18 15a.75.75 0 0 1-.75-.75H3a.75.75 0 0 1 0-1.5h14.25A.75.75 0 0 1 18 12Zm-6 0a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-1.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
-								</svg>
+							<div class="flex justify-between items-center mb-2">
+								<span class="text-emerald-400 font-semibold">6-8% ROI</span>
+								<span class="px-2 py-1 bg-slate-700/70 rounded-lg text-xs text-slate-300">5-10 years</span>
 							</div>
-							<h3 class="text-xl font-bold mb-2 text-white">Solar Energy</h3>
-							<div class="text-lg text-slate-300 mb-3">Start investing in photovoltaic solar farms and distributed solar projects.</div>
-							<div class="font-bold text-slate-200 mb-4">From $1M</div>
-							<div class="text-slate-400 mb-8">Invest in large-scale solar farms or distributed solar projects that power homes and businesses.</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">Expected ROI: 6-8%</div>
+							<div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+								<div class="h-full bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full" style="width: 75%"></div>
 							</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">CO₂ Offset: High</div>
-							</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">Term: 5-10 years</div>
+							<div class="flex justify-between text-xs text-slate-400 mt-1">
+								<span>Risk: Moderate</span>
+								<span>CO₂ Offset: High</span>
 							</div>
 						</div>
-						<div class="mt-auto">
-							<a class="inline-flex items-center justify-center rounded-lg border border-transparent font-semibold text-sm px-4 py-2.5 transition duration-150 ease-in-out text-white bg-emerald-600 hover:bg-emerald-700 w-full" href="/shop">Learn More</a>
-						</div>
-					</div>
-
-					<!-- Wind Energy Investment -->
-					<div class="relative flex flex-col h-full p-6 bg-slate-800 shadow-xl rounded-xl">
-						<div class="absolute top-0 right-0 mr-6 -mt-4">
-							<div class="inline-flex text-sm font-semibold py-1 px-3 mt-px text-emerald-200 bg-emerald-900/50 rounded-full">Most Popular</div>
-						</div>
-						<div class="mb-4">
-							<div class="text-blue-400 bg-blue-900/50 rounded-full w-12 h-12 flex items-center justify-center mb-3">
-								<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-									<path d="M12 4.5C7.582 4.5 4.5 7.582 4.5 12a7.5 7.5 0 0 0 9.566 7.227A18.998 18.998 0 0 1 7.5 14.46l2.46-.92a16.44 16.44 0 0 0 4.5 1.257v-1.04a4.5 4.5 0 1 1 1.5 0v.962c2.074-.21 4.03-.86 5.76-1.817L19.5 13.8a18.724 18.724 0 0 1-5.645 3.42A7.499 7.499 0 0 0 12 4.5Z" />
+						
+						<p class="text-slate-300 mb-4 text-sm">
+							Invest in photovoltaic solar farms and distributed solar projects that power homes and businesses with clean, renewable energy.
+						</p>
+						
+						<div class="space-y-2 mb-4">
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 								</svg>
+								<span class="text-sm">Stable returns with long-term contracts</span>
 							</div>
-							<h3 class="text-xl font-bold mb-2 text-white">Wind Energy</h3>
-							<div class="text-lg text-slate-300 mb-3">Finance modern wind farms in high-yield locations around the globe.</div>
-							<div class="font-bold text-slate-200 mb-4">From $2.5M</div>
-							<div class="text-slate-400 mb-8">Invest in onshore and offshore wind energy projects with long-term power purchase agreements.</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 								</svg>
-								<div class="text-slate-300">Expected ROI: 7-10%</div>
+								<span class="text-sm">Minimal operational challenges</span>
 							</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 								</svg>
-								<div class="text-slate-300">CO₂ Offset: Very High</div>
-							</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">Term: 8-15 years</div>
+								<span class="text-sm">Strong environmental impact</span>
 							</div>
 						</div>
-						<div class="mt-auto">
-							<a class="inline-flex items-center justify-center rounded-lg border border-transparent font-semibold text-sm px-4 py-2.5 transition duration-150 ease-in-out text-white bg-blue-600 hover:bg-blue-700 w-full" href="/shop">Learn More</a>
-						</div>
-					</div>
-
-					<!-- Energy Storage Investment -->
-					<div class="relative flex flex-col h-full p-6 bg-slate-800 rounded-xl shadow-lg">
-						<div class="mb-4">
-							<div class="text-indigo-400 bg-indigo-900/50 rounded-full w-12 h-12 flex items-center justify-center mb-3">
-								<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.22 5.78a.75.75 0 0 1 1.06-1.06l1.97 1.97v5.56c0 .41.34.75.75.75s.75-.34.75-.75V6.69l1.97-1.97a.75.75 0 0 1 1.06 1.06L12.75 6.8v1.79H3v-.5a8.249 8.249 0 0 1 2.26-5.69l.96-.9Zm8.28 4.56a.75.75 0 0 0-.75.75v5.38l-1.97 1.97a.75.75 0 1 0 1.06 1.06l1.97-1.97h5.56c.41 0 .75-.34.75-.75s-.34-.75-.75-.75h-5.56l1.97-1.97a.75.75 0 0 0-1.06-1.06l-1.97 1.97v-4.63c0-.41-.34-.75-.75-.75Z" />
-								</svg>
-							</div>
-							<h3 class="text-xl font-bold mb-2 text-white">Energy Storage</h3>
-							<div class="text-lg text-slate-300 mb-3">Support grid-scale battery storage solutions and innovative technologies.</div>
-							<div class="font-bold text-slate-200 mb-4">From $3M</div>
-							<div class="text-slate-400 mb-8">Invest in cutting-edge storage technologies that enable greater renewable energy integration.</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">Expected ROI: 8-12%</div>
-							</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">CO₂ Offset: Medium</div>
-							</div>
-							<div class="flex items-center mb-6">
-								<svg class="w-4 h-4 fill-current text-emerald-400 mr-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.707 3.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L6 10.586l7.293-7.293a1 1 0 0 1 1.414 0Z" />
-								</svg>
-								<div class="text-slate-300">Term: 3-7 years</div>
-							</div>
-						</div>
-						<div class="mt-auto">
-							<a class="inline-flex items-center justify-center rounded-lg border border-transparent font-semibold text-sm px-4 py-2.5 transition duration-150 ease-in-out text-white bg-indigo-600 hover:bg-indigo-700 w-full" href="/shop">Learn More</a>
-						</div>
+						
+						<a href="/shop" class="group inline-flex items-center font-medium text-emerald-400 hover:text-emerald-300">
+							Explore Solar Projects
+							<svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+							</svg>
+						</a>
 					</div>
 				</div>
 
-				<!-- Call to action -->
-				<div class="text-center pt-12 md:pt-16">
-					<div class="font-medium text-white mb-2">Need more information?</div>
-					<div class="text-slate-400 mb-6">Have questions about investment options and fund management?</div>
-					<a class="inline-flex items-center justify-center rounded-lg border border-transparent font-semibold text-sm px-4 py-2.5 transition duration-150 ease-in-out text-white bg-blue-600 hover:bg-blue-700" href="/contact">Contact an Investment Advisor</a>
+				<!-- Wind Energy Project -->
+				<div class="group bg-slate-800/60 rounded-xl overflow-hidden shadow-lg border border-blue-500/30 relative">
+					<div class="absolute -top-3 right-3 z-10">
+						<div class="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+							Most Popular
+						</div>
+					</div>
+					<div class="relative h-48 overflow-hidden">
+						<div class="absolute inset-0 bg-blue-900/20"></div>
+						<div class="absolute inset-0 flex items-center justify-center">
+							<div class="bg-blue-500/90 p-3 rounded-lg shadow-lg">
+								<svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+								</svg>
+							</div>
+						</div>
+						<div class="absolute bottom-0 left-0 p-4 z-10">
+							<h3 class="text-xl font-bold text-white">Wind Energy</h3>
+						</div>
+					</div>
+					
+					<div class="p-5">
+						<div class="mb-4">
+							<div class="flex justify-between items-center mb-2">
+								<span class="text-blue-400 font-semibold">7-10% ROI</span>
+								<span class="px-2 py-1 bg-slate-700/70 rounded-lg text-xs text-slate-300">8-15 years</span>
+							</div>
+							<div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+								<div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full" style="width: 85%"></div>
+							</div>
+							<div class="flex justify-between text-xs text-slate-400 mt-1">
+								<span>Risk: Moderate</span>
+								<span>CO₂ Offset: Very High</span>
+							</div>
+						</div>
+						
+						<p class="text-slate-300 mb-4 text-sm">
+							Finance modern wind farms in high-yield locations around the globe with long-term power purchase agreements and stable returns.
+						</p>
+						
+						<div class="space-y-2 mb-4">
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm">Higher returns than solar energy</span>
+							</div>
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm">Onshore and offshore opportunities</span>
+							</div>
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm">Exceptional carbon offset potential</span>
+							</div>
+						</div>
+						
+						<a href="/shop" class="group inline-flex items-center font-medium text-blue-400 hover:text-blue-300">
+							Explore Wind Projects
+							<svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- Energy Storage Project -->
+				<div class="group bg-slate-800/60 rounded-xl overflow-hidden shadow-lg border border-slate-700/50">
+					<div class="relative h-48 overflow-hidden">
+						<div class="absolute inset-0 bg-purple-900/20"></div>
+						<div class="absolute inset-0 flex items-center justify-center">
+							<div class="bg-purple-500/90 p-3 rounded-lg shadow-lg">
+								<svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+								</svg>
+							</div>
+						</div>
+						<div class="absolute bottom-0 left-0 p-4 z-10">
+							<h3 class="text-xl font-bold text-white">Energy Storage</h3>
+						</div>
+					</div>
+					
+					<div class="p-5">
+						<div class="mb-4">
+							<div class="flex justify-between items-center mb-2">
+								<span class="text-purple-400 font-semibold">8-12% ROI</span>
+								<span class="px-2 py-1 bg-slate-700/70 rounded-lg text-xs text-slate-300">3-7 years</span>
+							</div>
+							<div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+								<div class="h-full bg-gradient-to-r from-purple-600 to-purple-400 rounded-full" style="width: 90%"></div>
+							</div>
+							<div class="flex justify-between text-xs text-slate-400 mt-1">
+								<span>Risk: Higher</span>
+								<span>CO₂ Offset: Medium</span>
+							</div>
+						</div>
+						
+						<p class="text-slate-300 mb-4 text-sm">
+							Support grid-scale battery storage solutions and innovative technologies that enable greater renewable energy integration.
+						</p>
+						
+						<div class="space-y-2 mb-4">
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm">Highest potential returns</span>
+							</div>
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm">Cutting-edge technology exposure</span>
+							</div>
+							<div class="flex items-center text-sm text-slate-400">
+								<svg class="w-4 h-4 text-purple-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span class="text-sm">Shorter investment terms</span>
+							</div>
+						</div>
+						
+						<a href="/shop" class="group inline-flex items-center font-medium text-purple-400 hover:text-purple-300">
+							Explore Storage Projects
+							<svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- CTA Section -->
+			<div class="mt-16 bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 sm:p-10 text-center md:text-left md:flex md:items-center md:justify-between">
+				<div class="md:max-w-md mb-6 md:mb-0">
+					<h3 class="text-xl md:text-2xl font-bold text-white mb-2">Ready to make an impact?</h3>
+					<p class="text-slate-400">Our investment advisors can help you build a custom portfolio aligned with your financial goals and values.</p>
+				</div>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/shop" class="inline-flex justify-center items-center px-6 py-3 border border-transparent rounded-lg text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 shadow-lg shadow-blue-500/20">
+						Explore All Projects
+					</a>
+					<a href="/contact" class="inline-flex justify-center items-center px-6 py-3 border border-slate-600 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-700/50">
+						Speak to an Advisor
+					</a>
 				</div>
 			</div>
 		</div>
@@ -466,6 +570,258 @@
 					<p class="text-slate-400">
 						"The platform's AI-driven risk assessment has transformed how we evaluate renewable energy projects. It's like having a team of experts analyzing every aspect of potential investments."
 					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Membership Tiers Section -->
+	<div class="bg-slate-900 py-16">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="lg:text-center mb-12">
+				<div class="inline-flex text-sm font-semibold py-1 px-3 text-purple-200 bg-purple-900/50 rounded-full mb-3">Membership Levels</div>
+				<h2 class="text-3xl font-bold text-white mb-4">Choose Your Access Level</h2>
+				<p class="text-xl text-slate-400 max-w-3xl mx-auto">
+					Select the right membership tier for your investment goals and access exclusive features, insights, and project opportunities.
+				</p>
+			</div>
+
+			<div class="grid gap-8 lg:grid-cols-4 lg:gap-6 items-start">
+				<!-- Free Trial Tier -->
+				<div class="relative flex flex-col h-full p-6 bg-slate-800 rounded-xl border border-slate-700">
+					<div class="mb-5">
+						<div class="text-slate-300 bg-slate-700 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2 text-white">Discovery</h3>
+						<p class="text-lg font-bold mb-2 text-slate-300">$0</p>
+						<p class="text-slate-400 text-sm mb-5">Test drive our platform and discover the potential of renewable energy investments.</p>
+					</div>
+					
+					<div class="space-y-3 mb-6 flex-grow">
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">14-day trial access</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Preview investment opportunities</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Sample project reports</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Newsletter subscription</span>
+						</div>
+					</div>
+					
+					<a href="/signup" class="w-full inline-flex justify-center py-2 px-4 border border-slate-600 rounded-md shadow-sm text-sm font-medium text-slate-300 bg-transparent hover:bg-slate-700 focus:outline-none">
+						Start Discovery
+					</a>
+				</div>
+
+				<!-- Investor Tier -->
+				<div class="relative flex flex-col h-full p-6 bg-slate-800 rounded-xl border border-slate-700">
+					<div class="mb-5">
+						<div class="text-blue-300 bg-blue-900/50 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2 text-white">Horizon</h3>
+						<p class="text-lg font-bold mb-2 text-slate-300">$1,000<span class="text-sm font-normal text-slate-400">/year</span></p>
+						<p class="text-slate-400 text-sm mb-5">Access curated deals and essential data to make informed investment decisions.</p>
+					</div>
+					
+					<div class="space-y-3 mb-6 flex-grow">
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Full deal access</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Basic project data</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Monthly market insights</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Standard risk assessment</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Email support</span>
+						</div>
+					</div>
+					
+					<a href="/signup?tier=investor" class="w-full inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none">
+						Join Horizon
+					</a>
+				</div>
+
+				<!-- Professional Tier -->
+				<div class="relative flex flex-col h-full p-6 bg-slate-800 rounded-xl border border-blue-500/50 shadow-lg shadow-blue-500/10">
+					<div class="absolute top-0 right-0 -mt-4 mr-4">
+						<div class="inline-flex text-xs font-semibold py-1 px-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-full">Most Popular</div>
+					</div>
+					<div class="mb-5">
+						<div class="text-blue-300 bg-blue-900/50 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2 text-white">Catalyst</h3>
+						<p class="text-lg font-bold mb-2 text-slate-300">$5,000<span class="text-sm font-normal text-slate-400">/year</span></p>
+						<p class="text-slate-400 text-sm mb-5">Full access to data room and comprehensive due diligence services for serious investors.</p>
+					</div>
+					
+					<div class="space-y-3 mb-6 flex-grow">
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">All Investor features</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Complete data room access</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Due diligence support</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Quarterly detailed reports</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Dedicated account manager</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Risk hedging consultation</span>
+						</div>
+					</div>
+					
+					<a href="/signup?tier=professional" class="w-full inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 focus:outline-none">
+						Become a Catalyst
+					</a>
+				</div>
+
+				<!-- Partner Tier -->
+				<div class="relative flex flex-col h-full p-6 bg-slate-800 rounded-xl border border-slate-700">
+					<div class="mb-5">
+						<div class="text-purple-300 bg-purple-900/50 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-bold mb-2 text-white">Pinnacle</h3>
+						<p class="text-lg font-bold mb-2 text-slate-300">Custom</p>
+						<p class="text-slate-400 text-sm mb-5">Priority access to co-investment opportunities and advanced structuring tools.</p>
+					</div>
+					
+					<div class="space-y-3 mb-6 flex-grow">
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">All Professional features</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Co-investment priority</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Advanced structuring tools</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Custom investment strategies</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Executive deal access</span>
+						</div>
+						<div class="flex items-start">
+							<svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+							</svg>
+							<span class="text-slate-300">Dedicated investment team</span>
+						</div>
+					</div>
+					
+					<a href="/contact?subject=Partner" class="w-full inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none">
+						Reach the Pinnacle
+					</a>
+				</div>
+			</div>
+
+			<!-- Additional information -->
+			<div class="mt-12 bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+				<div class="flex flex-col md:flex-row items-start md:items-center">
+					<div class="flex-shrink-0 bg-blue-900/30 rounded-full p-3 mb-4 md:mb-0 md:mr-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-white mb-2">Not sure which tier is right for you?</h3>
+						<p class="text-slate-400 mb-4">Our team can help you identify the best membership level based on your investment goals and portfolio size.</p>
+						<div class="flex flex-wrap gap-3">
+							<a href="/contact" class="inline-flex items-center text-sm px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+								Schedule a Consultation
+							</a>
+							<a href="/compare-tiers" class="inline-flex items-center text-sm px-4 py-2 border border-slate-600 text-slate-300 rounded-md hover:bg-slate-700">
+								View Detailed Comparison
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
