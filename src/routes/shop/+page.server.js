@@ -38,7 +38,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 11.8,
       status: 'Under Construction',
-      image: 'https://images.pexels.com/photos/1115774/pexels-photo-1115774.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/1108814/pexels-photo-1108814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       developer: 'WindTech Solutions',
       description: 'Wind farm in Patagonia region with strong wind resources.',
       riskDetails: {
@@ -110,7 +110,7 @@ export async function load() {
       riskLevel: 'High',
       irr: 13.5,
       status: 'Under Construction',
-      image: 'https://images.pexels.com/photos/14513491/pexels-photo-14513491.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/534371/pexels-photo-534371.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'GeoTech Energy',
       description: 'Geothermal power plant utilizing the volcanic activity in the Andes mountains.',
       riskDetails: {
@@ -134,7 +134,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 12.0,
       status: 'Development',
-      image: 'https://images.pexels.com/photos/9116804/pexels-photo-9116804.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/31552837/pexels-photo-31552837/free-photo-of-natural-woodpile-of-cut-logs-in-a-forest-setting.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'BioPower Caribbean',
       description: 'Biomass power plant utilizing agricultural waste from the region.',
       riskDetails: {
@@ -160,7 +160,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 9.8,
       status: 'Operational',
-      image: 'https://images.pexels.com/photos/356068/pexels-photo-356068.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/8011458/pexels-photo-8011458.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Nordic Wind Power',
       description: 'Offshore wind farm in the North Sea with advanced turbine technology.',
       riskDetails: {
@@ -184,7 +184,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 11.5,
       status: 'Operational',
-      image: 'https://images.pexels.com/photos/14588971/pexels-photo-14588971.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/7527908/pexels-photo-7527908.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'ACWA Power',
       description: 'Concentrated solar power plant using mirror arrays and thermal storage.',
       riskDetails: {
@@ -232,7 +232,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 10.5,
       status: 'Under Construction',
-      image: 'https://images.pexels.com/photos/12771819/pexels-photo-12771819.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/2582936/pexels-photo-2582936.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Auspower Storage',
       description: 'Grid-scale battery storage facility enhancing renewable integration.',
       riskDetails: {
@@ -256,7 +256,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 13.2,
       status: 'Operational',
-      image: 'https://images.pexels.com/photos/60001/pexels-photo-60001.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/464401/pexels-photo-464401.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'KenGen',
       description: 'Geothermal power plant in the Great Rift Valley.',
       riskDetails: {
@@ -304,7 +304,7 @@ export async function load() {
       riskLevel: 'High',
       irr: 12.9,
       status: 'Under Construction',
-      image: 'https://images.pexels.com/photos/672350/pexels-photo-672350.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/532192/pexels-photo-532192.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Equinor Renewables',
       description: 'Floating offshore wind farm using innovative platform technology.',
       riskDetails: {
@@ -328,7 +328,7 @@ export async function load() {
       riskLevel: 'Low',
       irr: 8.9,
       status: 'Operational',
-      image: 'https://images.pexels.com/photos/8454517/pexels-photo-8454517.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/6996421/pexels-photo-6996421.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'NextEra Energy',
       description: 'Utility-scale solar farm with single-axis tracking technology.',
       riskDetails: {
@@ -352,7 +352,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 11.2,
       status: 'Operational',
-      image: 'https://images.pexels.com/photos/2933247/pexels-photo-2933247.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/15525689/pexels-photo-15525689/free-photo-of-logs-in-moss.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Baltic Green Energy',
       description: 'Biomass cogeneration plant providing electricity and district heating.',
       riskDetails: {
@@ -376,7 +376,7 @@ export async function load() {
       riskLevel: 'High',
       irr: 16.5,
       status: 'Development',
-      image: 'https://images.pexels.com/photos/4773552/pexels-photo-4773552.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/2374666/pexels-photo-2374666.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Wave Power Innovations',
       description: 'Wave energy converters harnessing powerful North Atlantic swells.',
       riskDetails: {
@@ -400,7 +400,7 @@ export async function load() {
       riskLevel: 'Medium',
       irr: 11.7,
       status: 'Under Construction',
-      image: 'https://images.pexels.com/photos/4894576/pexels-photo-4894576.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/371917/pexels-photo-371917.jpeg?auto=compress&cs=tinysrgb&w=600',
       developer: 'Vietnam Renewable Energy',
       description: 'Floating solar farm on reservoir, maximizing land use efficiency.',
       riskDetails: {
@@ -424,7 +424,7 @@ export async function load() {
       riskLevel: 'High',
       irr: 14.5,
       status: 'Development',
-      image: 'https://images.pexels.com/photos/1468602/pexels-photo-1468602.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/images/hydroelectric-power-pipes.jpg',
       developer: 'Green Hydrogen Systems',
       description: 'Green hydrogen production facility powered by geothermal and hydroelectric energy.',
       riskDetails: {
