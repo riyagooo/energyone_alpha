@@ -72,5 +72,5 @@
 </footer>
 
 <style>
-
+    @view-transition { navigation: auto; }
 </style>
