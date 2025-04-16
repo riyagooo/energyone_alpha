@@ -151,7 +151,7 @@
           {#if filteredProjects.length > 0}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {#each paginatedProjects as project}
-                <div class="bg-slate-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="bg-slate-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" style="{`view-transition-name: product-${project.name}`}">
                   <div class="relative h-48">
                     <img 
                       src={project.image} 

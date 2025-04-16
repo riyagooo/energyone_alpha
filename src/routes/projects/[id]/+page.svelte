@@ -128,7 +128,7 @@
 </script>
 
 <div class="min-h-screen bg-slate-900">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" style="{`view-transition-name: product-${project.name}`}">
     <!-- Project Header -->
     <div class="mb-8">
       <h1 class="text-3xl font-bold text-slate-300">{project.name}</h1>
